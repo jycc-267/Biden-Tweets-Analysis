@@ -9,12 +9,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="組員：簡郁展, 潘立恆, 邱繼賢, 劉慧新, 陳暘" />
+<meta name="author" content="Jimmy Yu-Chan Chien (簡郁展)" />
 
 
 <title>From @JoeBiden to @POTUS</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -55,41 +56,68 @@
   }
 </style>
 <style type="text/css" data-origin="pandoc">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; background-color: #f8f8f8; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-pre, code { background-color: #f8f8f8; }
-code > span.kw { color: #204a87; font-weight: bold; } /* Keyword */
-code > span.dt { color: #204a87; } /* DataType */
-code > span.dv { color: #0000cf; } /* DecVal */
-code > span.bn { color: #0000cf; } /* BaseN */
-code > span.fl { color: #0000cf; } /* Float */
-code > span.ch { color: #4e9a06; } /* Char */
-code > span.st { color: #4e9a06; } /* String */
-code > span.co { color: #8f5902; font-style: italic; } /* Comment */
-code > span.ot { color: #8f5902; } /* Other */
-code > span.al { color: #ef2929; } /* Alert */
-code > span.fu { color: #000000; } /* Function */
-code > span.er { color: #a40000; font-weight: bold; } /* Error */
-code > span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #000000; } /* Constant */
-code > span.sc { color: #000000; } /* SpecialChar */
-code > span.vs { color: #4e9a06; } /* VerbatimString */
-code > span.ss { color: #4e9a06; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #000000; } /* Variable */
-code > span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #ce5c00; font-weight: bold; } /* Operator */
-code > span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code > span.ex { } /* Extension */
-code > span.at { color: #c4a000; } /* Attribute */
-code > span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
-code > span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
 
 </style>
 <script>
@@ -359,12 +387,12 @@ div.tocify {
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row">
-<div class="col-sm-12 col-md-4 col-lg-3">
+<div class="col-xs-12 col-sm-4 col-md-3">
 <div id="TOC" class="tocify">
 </div>
 </div>
 
-<div class="toc-content col-sm-12 col-md-8 col-lg-9">
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -385,7 +413,7 @@ div.tocify {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/sevenpray/2021R_biden_report/">
+  <a href="https://github.com/jycc-267/Biden-Tweets-Analysis/">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
@@ -400,62 +428,62 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">From <span class="citation">@JoeBiden</span> to <span class="citation">@POTUS</span></h1>
-<h4 class="author">組員：簡郁展, 潘立恆, 邱繼賢, 劉慧新, 陳暘</h4>
+<h4 class="author">Jimmy Yu-Chan Chien (簡郁展)</h4>
 <h4 class="date">2021/6/18</h4>
 
 </div>
 
 
-<div id="problematic" class="section level1">
-<h1><span class="header-section-number">1</span> Problematic</h1>
+<div id="problematic" class="section level1" number="1">
+<h1 number="1"><span class="header-section-number">1</span> Problematic</h1>
 <ol style="list-style-type: decimal">
 <li><p>拜登正式就任美國第46任總統後，Twitter也將總統官方帳號<code>@POTUS</code>轉交拜登團隊。多數美國媒體聲稱過去<code>@JoeBiden</code>的經營主要面向美國大眾推廣政策理念，相反的川普帳號只跟自己的支持者對話。而時下未見有拜登<code>@POTUS</code>的推特分析，我們有興趣的是拜登<code>@POTUS</code>在公共關係經營上還是走傳統、規律路線嗎？拜登<code>@POTUS</code><strong>是僅僅將twitter當作一個宣傳政令跟政府講話的媒體平台，還是存在明顯的情緒宣傳？</strong></p></li>
 <li><p>本專案預設即使去掉停詞之後，取得的關鍵字對於推文含意的辨識度還是有權重差異的。有些特別具象化單詞會能夠指涉與特定政策意涵或與特定政策事件相關，例如<code>vaccine/covid/jobs/economy/plan</code>等等。而其他較模糊的政治相關用語(例如<code>president/senate/congress</code>等)、一般單詞則被視為不具有明確政策資訊內涵。</p></li>
 <li><p>因此，本專案簡單假設如果<code>@POTUS</code>只是單純宣傳政令或講話的帳號，應該大量含有上述辨識度高的具象化單字以指涉特定議題或事件。或者，在喜歡數或轉推數較高的推文中，要可以觀察到上述情形。同時，本文也會比較<code>@JoeBiden</code>在情緒分析是否與<code>@POTUS</code>有明顯不同。</p></li>
 </ol>
 </div>
-<div id="workflow" class="section level1">
-<h1><span class="header-section-number">2</span> Workflow</h1>
-<div id="download-packages" class="section level2">
-<h2><span class="header-section-number">2.1</span> Download Packages</h2>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(twitteR)
-<span class="kw">library</span>(dplyr)
-<span class="kw">library</span>(tibble)
-<span class="kw">library</span>(ggplot2)
-<span class="kw">library</span>(stringr)
-<span class="kw">library</span>(tidyr)
-<span class="kw">library</span>(lubridate)
-<span class="kw">library</span>(scales)
-<span class="kw">library</span>(tidytext)
-<span class="kw">library</span>(textdata)
-<span class="kw">library</span>(cowplot)</code></pre></div>
+<div id="workflow" class="section level1" number="2">
+<h1 number="2"><span class="header-section-number">2</span> Workflow</h1>
+<div id="download-packages" class="section level2" number="2.1">
+<h2 number="2.1"><span class="header-section-number">2.1</span> Download Packages</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(twitteR)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tibble)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scales)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidytext)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(textdata)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(cowplot)</span></code></pre></div>
 </div>
-<div id="collecting-data-and-preprocessing" class="section level2">
-<h2><span class="header-section-number">2.2</span> Collecting Data and Preprocessing</h2>
+<div id="collecting-data-and-preprocessing" class="section level2" number="2.2">
+<h2 number="2.2"><span class="header-section-number">2.2</span> Collecting Data and Preprocessing</h2>
 <p>資料取得與資料前處理：從<code>Twitter API</code>與<code>twitteR()</code>的<code>userTimeline()</code>函數載入推文擷取資料，並轉換成data frame，時間跨度涵蓋拜登<code>@POTUS</code>帳號截止至2021年6月13日共760筆，另有從<code>Kaggle</code>抓取<code>@JoeBiden</code>現成資料。之後將取得的的data frame整理出我們需要的變數。</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Need apikey and token available from Twitter API:</span>
-  <span class="co"># setup_twitter_oauth(apikey, apisecret, token, tokensecret)</span>
-  <span class="co"># biden_tweets &lt;- userTimeline(&quot;POTUS&quot;, n = 3200)</span>
-  <span class="co"># biden_tweets_df &lt;- tbl_df(map_df(biden_tweets, as.data.frame))</span>
-
-<span class="co">#Load the dataset obtained from TwitteR package</span>
-<span class="kw">load</span>(<span class="dt">file =</span> <span class="st">&quot;./data/biden_tweets_df.rda&quot;</span>)
-<span class="kw">load</span>(<span class="dt">file =</span> <span class="st">&quot;./data/AllJoeBidenTweets.rda&quot;</span>)
-
-<span class="co"># Mutate &quot;source&quot; and &quot;hour&quot; column and select other meaningful columns</span>
-df &lt;-<span class="st"> </span>biden_tweets_df <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">    </span><span class="kw">mutate</span>(<span class="dt">source =</span> <span class="kw">sapply</span>(biden_tweets_df<span class="op">$</span>statusSource , <span class="cf">function</span>(x) {
-        <span class="cf">if</span> (<span class="kw">str_detect</span>(x, <span class="dt">pattern =</span> <span class="st">&quot;Twitter Web App&quot;</span>)) <span class="kw">return</span>(<span class="st">&quot;Twitter_Web_App&quot;</span>)
-        <span class="cf">else</span> <span class="cf">if</span> (<span class="kw">str_detect</span>(x, <span class="dt">pattern =</span> <span class="st">&quot;Periscope&quot;</span>)) <span class="kw">return</span>(<span class="st">&quot;Periscope&quot;</span>)
-        <span class="cf">else</span> <span class="cf">if</span> (<span class="kw">str_detect</span>(x, <span class="dt">pattern =</span> <span class="st">&quot;Twitter Media Studio&quot;</span>)) <span class="kw">return</span>(<span class="st">&quot;Twitter_Media_Studio&quot;</span>)
-        <span class="cf">else</span> <span class="cf">if</span> (<span class="kw">str_detect</span>(x, <span class="dt">pattern =</span> <span class="st">&quot;Sprinklr&quot;</span>)) <span class="kw">return</span>(<span class="st">&quot;Sprinklr&quot;</span>)
-        <span class="cf">else</span> <span class="kw">return</span>(<span class="st">&quot;The_White_House&quot;</span>)
-    })) <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">    </span><span class="kw">select</span>(id, source, text, created, retweetCount, favoriteCount) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">mutate</span>(<span class="dt">hour =</span> <span class="kw">hour</span>(<span class="kw">with_tz</span>(created, <span class="st">&quot;EST&quot;</span>)))</code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Need apikey and token available from Twitter API:</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># setup_twitter_oauth(apikey, apisecret, token, tokensecret)</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># biden_tweets &lt;- userTimeline(&quot;POTUS&quot;, n = 3200)</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># biden_tweets_df &lt;- tbl_df(map_df(biden_tweets, as.data.frame))</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">#Load the dataset obtained from TwitteR package</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="at">file =</span> <span class="st">&quot;./data/biden_tweets_df.rda&quot;</span>)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="at">file =</span> <span class="st">&quot;./data/AllJoeBidenTweets.rda&quot;</span>)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Mutate &quot;source&quot; and &quot;hour&quot; column and select other meaningful columns</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> biden_tweets_df <span class="sc">%&gt;%</span> </span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">source =</span> <span class="fu">sapply</span>(biden_tweets_df<span class="sc">$</span>statusSource , <span class="cf">function</span>(x) {</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> (<span class="fu">str_detect</span>(x, <span class="at">pattern =</span> <span class="st">&quot;Twitter Web App&quot;</span>)) <span class="fu">return</span>(<span class="st">&quot;Twitter_Web_App&quot;</span>)</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span> <span class="cf">if</span> (<span class="fu">str_detect</span>(x, <span class="at">pattern =</span> <span class="st">&quot;Periscope&quot;</span>)) <span class="fu">return</span>(<span class="st">&quot;Periscope&quot;</span>)</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span> <span class="cf">if</span> (<span class="fu">str_detect</span>(x, <span class="at">pattern =</span> <span class="st">&quot;Twitter Media Studio&quot;</span>)) <span class="fu">return</span>(<span class="st">&quot;Twitter_Media_Studio&quot;</span>)</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span> <span class="cf">if</span> (<span class="fu">str_detect</span>(x, <span class="at">pattern =</span> <span class="st">&quot;Sprinklr&quot;</span>)) <span class="fu">return</span>(<span class="st">&quot;Sprinklr&quot;</span>)</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span> <span class="fu">return</span>(<span class="st">&quot;The_White_House&quot;</span>)</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    })) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(id, source, text, created, retweetCount, favoriteCount) <span class="sc">%&gt;%</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">hour =</span> <span class="fu">hour</span>(<span class="fu">with_tz</span>(created, <span class="st">&quot;EST&quot;</span>)))</span></code></pre></div>
 </div>
-<div id="analytic-method" class="section level2">
-<h2><span class="header-section-number">2.3</span> Analytic Method</h2>
+<div id="analytic-method" class="section level2" number="2.3">
+<h2 number="2.3"><span class="header-section-number">2.3</span> Analytic Method</h2>
 <ul>
 <li>從<code>biden_tweets_df</code>中，我們進行發推來源的提取與時區調整，整理出<code>id, source, text, created, retweetCount, favoriteCount, hour</code>七個變數。</li>
 <li>資料的分析主要就是對這些變數進行關係操弄，其中涉及時間資料、詞彙提取、直接對圖文進行分析，在方法上都需要對字串進行處理以及偵測。因此主要使用到的packages包含：<code>tidytext/stringr/tidyr/lubridate</code>等。</li>
@@ -463,96 +491,96 @@ df &lt;-<span class="st"> </span>biden_tweets_df <span class="op">%&gt;%</span><
 <li>本專案希望先呈現<code>@POTUS</code>在時間資料上的表現，了解其整體發文動態。接著進入推文內容進行文字與情緒分析。最終嘗試回答我們在<code>Problematic</code>中的提問。</li>
 </ul>
 <p>後面的個段落會一邊進行程式碼的說明，同時呈現觀察結果。</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Extracting tweet words</span>
-reg &lt;-<span class="st"> &quot;([^A-Za-z</span><span class="ch">\\</span><span class="st">d#@&#39;]|&#39;(?![A-Za-z</span><span class="ch">\\</span><span class="st">d#@]))&quot;</span>
-
-tweet_words &lt;-<span class="st"> </span>df <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">filter</span>(<span class="op">!</span><span class="kw">str_detect</span>(text, <span class="st">&#39;^&quot;&#39;</span>)) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">mutate</span>(<span class="dt">text =</span> <span class="kw">str_replace_all</span>(text, <span class="st">&quot;https://t.co/[A-Za-z</span><span class="ch">\\</span><span class="st">d]+|&amp;amp;&quot;</span>, <span class="st">&quot;&quot;</span>)) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">unnest_tokens</span>(word, text, <span class="dt">token =</span> <span class="st">&quot;regex&quot;</span>, <span class="dt">pattern =</span> reg) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">filter</span>(<span class="op">!</span>word <span class="op">%in%</span><span class="st"> </span>stop_words<span class="op">$</span>word,
-           <span class="kw">str_detect</span>(word, <span class="st">&quot;[a-z]&quot;</span>)) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">arrange</span>(<span class="kw">desc</span>(favoriteCount))</code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Extracting tweet words</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>reg <span class="ot">&lt;-</span> <span class="st">&quot;([^A-Za-z</span><span class="sc">\\</span><span class="st">d#@&#39;]|&#39;(?![A-Za-z</span><span class="sc">\\</span><span class="st">d#@]))&quot;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>tweet_words <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">str_detect</span>(text, <span class="st">&#39;^&quot;&#39;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">text =</span> <span class="fu">str_replace_all</span>(text, <span class="st">&quot;https://t.co/[A-Za-z</span><span class="sc">\\</span><span class="st">d]+|&amp;amp;&quot;</span>, <span class="st">&quot;&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">unnest_tokens</span>(word, text, <span class="at">token =</span> <span class="st">&quot;regex&quot;</span>, <span class="at">pattern =</span> reg) <span class="sc">%&gt;%</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(<span class="sc">!</span>word <span class="sc">%in%</span> stop_words<span class="sc">$</span>word,</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>           <span class="fu">str_detect</span>(word, <span class="st">&quot;[a-z]&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">arrange</span>(<span class="fu">desc</span>(favoriteCount))</span></code></pre></div>
 </div>
 </div>
-<div id="general-analysis" class="section level1">
-<h1><span class="header-section-number">3</span> General Analysis</h1>
-<div id="timeline" class="section level2">
-<h2><span class="header-section-number">3.1</span> Timeline</h2>
+<div id="general-analysis" class="section level1" number="3">
+<h1 number="3"><span class="header-section-number">3</span> General Analysis</h1>
+<div id="timeline" class="section level2" number="3.1">
+<h2 number="3.1"><span class="header-section-number">3.1</span> Timeline</h2>
 <p>對<code>@POTUS</code>從2月到六月的發文狀況做總覽，觀察不同發文來源在<code>favoriteCount 以及 retweetCount</code>的表現。</p>
 <p>=======</p>
-<div id="timeline-of-retweetcount-and-favoritecount-from-feb-to-june" class="section level3">
-<h3><span class="header-section-number">3.1.1</span> Timeline of retweetCount and FavoriteCount from Feb to June</h3>
+<div id="timeline-of-retweetcount-and-favoritecount-from-feb-to-june" class="section level3" number="3.1.1">
+<h3 number="3.1.1"><span class="header-section-number">3.1.1</span> Timeline of retweetCount and FavoriteCount from Feb to June</h3>
 <p>下面兩張圖可以明顯看出大部分推文都是從<code>The White House</code> 發出來的，而<code>favoriteCount</code>的數量級大致上為<code>retweetCount</code>的十倍，兩者趨勢大體上相同。</p>
 <ul>
 <li><code>Twitter Web App</code>總共只發了四篇貼文，但其中的兩篇皆獲得了幾乎最高的<code>retweetCount 和 favoriteCount</code>。</li>
 <li><code>Sprinklr</code>也只有5篇貼文，但<code>favoriteCount/retweetCount</code>前10名的推文中，就有3篇來自<code>Sprinklr</code>。</li>
 <li>但這些現象都只發生在一月拜登剛就職總統的時候。</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data =</span> df) <span class="op">+</span><span class="st"> </span>
-<span class="st">    </span><span class="kw">geom_col</span>(<span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> created, <span class="dt">y =</span> retweetCount, <span class="dt">color =</span> source, <span class="dt">fill =</span> source))</code></pre></div>
-<p><img src="Biden-POTUS-Final-Project_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data =</span> df) <span class="op">+</span><span class="st"> </span>
-<span class="st">    </span><span class="kw">geom_col</span>(<span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> created, <span class="dt">y =</span> favoriteCount, <span class="dt">color =</span> source, <span class="dt">fill =</span> source))</code></pre></div>
-<p><img src="Biden-POTUS-Final-Project_files/figure-html/unnamed-chunk-4-2.png" width="672" /></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> df) <span class="sc">+</span> </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_col</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> created, <span class="at">y =</span> retweetCount, <span class="at">color =</span> source, <span class="at">fill =</span> source))</span></code></pre></div>
+<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> df) <span class="sc">+</span> </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_col</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> created, <span class="at">y =</span> favoriteCount, <span class="at">color =</span> source, <span class="at">fill =</span> source))</span></code></pre></div>
+<p><img src="index_files/figure-html/unnamed-chunk-4-2.png" width="672" /></p>
 </div>
-<div id="tweeting-in-hour-of-a-day" class="section level3">
-<h3><span class="header-section-number">3.1.2</span> Tweeting in Hour of a Day</h3>
+<div id="tweeting-in-hour-of-a-day" class="section level3" number="3.1.2">
+<h3 number="3.1.2"><span class="header-section-number">3.1.2</span> Tweeting in Hour of a Day</h3>
 <p>將發文時間轉換成美東時間後，可以觀察到以下現象：</p>
 <ul>
 <li><code>@POTUS</code>發文在下午較頻繁，並在下午1點、晚上8點左右達到高峰，而且凌晨1-5點的時間段發文比例相當低，發文時間相當規律。</li>
 <li>將每個時間段累積喜歡數加總後，發現與發文比例的趨勢相似，但發文數量多也可能造成喜歡數加總較多的現象。</li>
 <li>若檢視每個時間段的喜歡數平均，在下午12-1點、下午5-6點、晚上8-10點都有明顯上升的趨勢，但與前兩張圖不同的是最高峰並非發生在晚上8點。除了晚上8點後發文比例比較少外，晚上8點後轉推數明顯較高也可能是提高觸及率與喜歡數的主要原 因。此外，若內文包含重要議題或是受關注的社會事件，也可能獲得可觀的喜歡與轉推。</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Form a new data frame with favoriteCount and retweetCount through whole time line</span>
-<span class="co"># Merge each plot into one</span>
-
-tweeting_hour &lt;-<span class="st"> </span>df <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">    </span><span class="kw">group_by</span>(hour) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">summarise</span>(<span class="dt">number=</span><span class="kw">n</span>(), 
-              <span class="dt">sum_favoriteCount =</span> <span class="kw">sum</span>(favoriteCount), 
-              <span class="dt">sum_retweetCount =</span> <span class="kw">sum</span>(retweetCount),
-              <span class="dt">mean_favoriteCount =</span> <span class="kw">mean</span>(favoriteCount), 
-              <span class="dt">mean_retweetCount =</span> <span class="kw">mean</span>(retweetCount)) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">arrange</span>(<span class="kw">desc</span>(number))
-    
-p1 &lt;-<span class="st"> </span>df <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">    </span><span class="kw">count</span>(<span class="dt">hour =</span> <span class="kw">hour</span>(<span class="kw">with_tz</span>(created, <span class="st">&quot;EST&quot;</span>))) <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">    </span><span class="kw">mutate</span>(<span class="dt">percent =</span> n <span class="op">/</span><span class="st"> </span><span class="kw">sum</span>(n)) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">ggplot</span>(<span class="dt">mapping =</span> <span class="kw">aes</span>(hour, percent)) <span class="op">+</span><span class="st"> </span>
-<span class="st">    </span><span class="kw">geom_line</span>() <span class="op">+</span><span class="st"> </span>
-<span class="st">    </span><span class="kw">scale_y_continuous</span>(<span class="dt">labels =</span> <span class="kw">percent_format</span>()) <span class="op">+</span><span class="st"> </span>
-<span class="st">    </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Hour of a day&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;% of tweets&quot;</span>)
-
-p2 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(tweeting_hour) <span class="op">+</span><span class="st"> </span>
-<span class="st">    </span><span class="kw">geom_line</span>(<span class="kw">aes</span>(hour, sum_favoriteCount), <span class="dt">color =</span> <span class="st">&quot;blue&quot;</span>) <span class="op">+</span>
-<span class="st">    </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Hour of a day&quot;</span>)
-
-p3 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(tweeting_hour) <span class="op">+</span>
-<span class="st">    </span><span class="kw">geom_line</span>(<span class="kw">aes</span>(hour, mean_favoriteCount), <span class="dt">color =</span> <span class="st">&quot;red&quot;</span>) <span class="op">+</span>
-<span class="st">    </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Hour of a day&quot;</span>)
-
-
-p4 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(tweeting_hour) <span class="op">+</span>
-<span class="st">    </span><span class="kw">geom_line</span>(<span class="kw">aes</span>(hour, mean_retweetCount), <span class="dt">color =</span> <span class="st">&quot;darkgreen&quot;</span>) <span class="op">+</span>
-<span class="st">    </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Hour of a day&quot;</span>)
-    
-<span class="kw">plot_grid</span>(p1, p2, p3, p4, <span class="dt">ncol =</span> <span class="dv">2</span>)</code></pre></div>
-<p><img src="Biden-POTUS-Final-Project_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Form a new data frame with favoriteCount and retweetCount through whole time line</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Merge each plot into one</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>tweeting_hour <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> </span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(hour) <span class="sc">%&gt;%</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarise</span>(<span class="at">number=</span><span class="fu">n</span>(), </span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>              <span class="at">sum_favoriteCount =</span> <span class="fu">sum</span>(favoriteCount), </span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>              <span class="at">sum_retweetCount =</span> <span class="fu">sum</span>(retweetCount),</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>              <span class="at">mean_favoriteCount =</span> <span class="fu">mean</span>(favoriteCount), </span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>              <span class="at">mean_retweetCount =</span> <span class="fu">mean</span>(retweetCount)) <span class="sc">%&gt;%</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">arrange</span>(<span class="fu">desc</span>(number))</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>p1 <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> </span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">count</span>(<span class="at">hour =</span> <span class="fu">hour</span>(<span class="fu">with_tz</span>(created, <span class="st">&quot;EST&quot;</span>))) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">percent =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n)) <span class="sc">%&gt;%</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(hour, percent)) <span class="sc">+</span> </span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>() <span class="sc">+</span> </span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">percent_format</span>()) <span class="sc">+</span> </span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;Hour of a day&quot;</span>, <span class="at">y =</span> <span class="st">&quot;% of tweets&quot;</span>)</span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>p2 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(tweeting_hour) <span class="sc">+</span> </span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>(<span class="fu">aes</span>(hour, sum_favoriteCount), <span class="at">color =</span> <span class="st">&quot;blue&quot;</span>) <span class="sc">+</span></span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;Hour of a day&quot;</span>)</span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>p3 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(tweeting_hour) <span class="sc">+</span></span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>(<span class="fu">aes</span>(hour, mean_favoriteCount), <span class="at">color =</span> <span class="st">&quot;red&quot;</span>) <span class="sc">+</span></span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;Hour of a day&quot;</span>)</span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>p4 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(tweeting_hour) <span class="sc">+</span></span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>(<span class="fu">aes</span>(hour, mean_retweetCount), <span class="at">color =</span> <span class="st">&quot;darkgreen&quot;</span>) <span class="sc">+</span></span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;Hour of a day&quot;</span>)</span>
+<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_grid</span>(p1, p2, p3, p4, <span class="at">ncol =</span> <span class="dv">2</span>)</span></code></pre></div>
+<p><img src="index_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
 </div>
 </div>
-<div id="picturelink-from-each-source" class="section level2">
-<h2><span class="header-section-number">3.2</span> Picture/Link from each source</h2>
+<div id="picturelink-from-each-source" class="section level2" number="3.2">
+<h2 number="3.2"><span class="header-section-number">3.2</span> Picture/Link from each source</h2>
 <p><code>@POTUS</code>的推文幾乎都附有照片或連結，差距非常顯著。藉由直接觀察拜登的推文，以及推文附帶的文字敘述進而推論這些圖片或連結多與特定會議、政策或社會事件有關。(詳參<code>Comparison of Words</code>)</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Whether a Picture/Link is likely to be included in a Tweet</span>
-<span class="co"># Detect regex with &quot;t.co&quot; in the &quot;text&quot; column</span>
-
-picture &lt;-<span class="st"> </span>df <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">    </span><span class="kw">filter</span>(<span class="op">!</span><span class="kw">str_detect</span>(text, <span class="st">&#39;^&quot;&#39;</span>)) <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">    </span><span class="kw">count</span>(source, <span class="dt">picture =</span> <span class="kw">ifelse</span>(<span class="kw">str_detect</span>(text, <span class="st">&quot;t.co&quot;</span>), 
-                                   <span class="st">&quot;Picture/link&quot;</span>, <span class="st">&quot;No picture/link&quot;</span>))
-
-picture</code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Whether a Picture/Link is likely to be included in a Tweet</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Detect regex with &quot;t.co&quot; in the &quot;text&quot; column</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>picture <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> </span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">str_detect</span>(text, <span class="st">&#39;^&quot;&#39;</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">count</span>(source, <span class="at">picture =</span> <span class="fu">ifelse</span>(<span class="fu">str_detect</span>(text, <span class="st">&quot;t.co&quot;</span>), </span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>                                   <span class="st">&quot;Picture/link&quot;</span>, <span class="st">&quot;No picture/link&quot;</span>))</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>picture</span></code></pre></div>
 <pre><code>## # A tibble: 7 x 3
 ##   source               picture             n
 ##   &lt;chr&gt;                &lt;chr&gt;           &lt;int&gt;
@@ -563,66 +591,66 @@ picture</code></pre></div>
 ## 5 The_White_House      Picture/link      628
 ## 6 Twitter_Media_Studio Picture/link       45
 ## 7 Twitter_Web_App      Picture/link        3</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">df <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">    </span><span class="kw">filter</span>(<span class="op">!</span><span class="kw">str_detect</span>(text, <span class="st">&#39;^&quot;&#39;</span>)) <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">    </span><span class="kw">count</span>(<span class="dt">picture =</span> <span class="kw">ifelse</span>(<span class="kw">str_detect</span>(text, <span class="st">&quot;t.co&quot;</span>), 
-                                   <span class="st">&quot;Picture/link&quot;</span>, <span class="st">&quot;No picture/link&quot;</span>)) <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">    </span><span class="kw">ggplot</span>() <span class="op">+</span><span class="st"> </span>
-<span class="st">    </span><span class="kw">geom_bar</span>(<span class="kw">aes</span>(picture, n), <span class="dt">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="dt">width =</span> <span class="fl">0.5</span>) <span class="op">+</span><span class="st"> </span>
-<span class="st">    </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;count&quot;</span>)</code></pre></div>
-<p><img src="Biden-POTUS-Final-Project_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span> </span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">str_detect</span>(text, <span class="st">&#39;^&quot;&#39;</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">count</span>(<span class="at">picture =</span> <span class="fu">ifelse</span>(<span class="fu">str_detect</span>(text, <span class="st">&quot;t.co&quot;</span>), </span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>                                   <span class="st">&quot;Picture/link&quot;</span>, <span class="st">&quot;No picture/link&quot;</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>() <span class="sc">+</span> </span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_bar</span>(<span class="fu">aes</span>(picture, n), <span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="at">width =</span> <span class="fl">0.5</span>) <span class="sc">+</span> </span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;&quot;</span>, <span class="at">y =</span> <span class="st">&quot;count&quot;</span>)</span></code></pre></div>
+<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 </div>
 </div>
-<div id="comparison-of-words" class="section level1">
-<h1><span class="header-section-number">4</span> Comparison of Words</h1>
+<div id="comparison-of-words" class="section level1" number="4">
+<h1 number="4"><span class="header-section-number">4</span> Comparison of Words</h1>
 <p>在文字分析的環節，我們希望可以知道:哪些單詞彙引起我們的興趣？</p>
 <ul>
 <li><code>@POTUS</code>最常提到的詞彙，以及這些詞彙是否是<code>Problematic的假設</code>中提到在政策意涵上具有辨識度的字詞。</li>
 <li>區分這些詞彙的來源傾向，藉此觀察推文管理情形。</li>
 </ul>
-<div id="word-frequency-plot" class="section level2">
-<h2><span class="header-section-number">4.1</span> Word Frequency Plot</h2>
+<div id="word-frequency-plot" class="section level2" number="4.1">
+<h2 number="4.1"><span class="header-section-number">4.1</span> Word Frequency Plot</h2>
 <p>首先是詞頻圖，可以發現<code>@POTUS</code>整體而言政策辨識度高的詞彙包含: <code>plan/jobs/covid/tune/rescue/vaccinated</code>。推測與拜登的紓困法案《The American Jobs Plan》、《The American Rescue Plan Act of 2021》以及疫苗施打有關。</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Words with top 20 high occurrence</span>
-
-tweet_words <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">count</span>(word) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">mutate</span>(<span class="dt">word =</span> <span class="kw">reorder</span>(word, n)) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">top_n</span>(<span class="dv">20</span>, n) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">ggplot</span>() <span class="op">+</span>
-<span class="st">    </span><span class="kw">geom_bar</span>(<span class="kw">aes</span>(<span class="dt">x =</span> word, <span class="dt">y =</span> n), <span class="dt">stat =</span> <span class="st">&quot;identity&quot;</span>) <span class="op">+</span>
-<span class="st">    </span><span class="kw">ylab</span>(<span class="st">&quot;frequency of occurrence&quot;</span>) <span class="op">+</span>
-<span class="st">    </span><span class="kw">coord_flip</span>()</code></pre></div>
-<p><img src="Biden-POTUS-Final-Project_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Words with top 20 high occurrence</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>tweet_words <span class="sc">%&gt;%</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">count</span>(word) <span class="sc">%&gt;%</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">word =</span> <span class="fu">reorder</span>(word, n)) <span class="sc">%&gt;%</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">top_n</span>(<span class="dv">20</span>, n) <span class="sc">%&gt;%</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">x =</span> word, <span class="at">y =</span> n), <span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>) <span class="sc">+</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ylab</span>(<span class="st">&quot;frequency of occurrence&quot;</span>) <span class="sc">+</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">coord_flip</span>()</span></code></pre></div>
+<p><img src="index_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 </div>
-<div id="word-weighting-of-different-sources-video-streaming-app-and-the-white-house" class="section level2">
-<h2><span class="header-section-number">4.2</span> Word Weighting of different sources (Video Streaming App and The White House)</h2>
+<div id="word-weighting-of-different-sources-video-streaming-app-and-the-white-house" class="section level2" number="4.2">
+<h2 number="4.2"><span class="header-section-number">4.2</span> Word Weighting of different sources (Video Streaming App and The White House)</h2>
 <p>接著我們希望了解<code>@POTUS</code>推文內容的來源傾向，我們更有興趣的東西是這些具有辨識度的字詞相對傾向被哪些發文來源使用，尤其是使用影音串流平台(<code>Periscope</code>)以及一般發文管道<code>The White House</code>在文字使用傾向上區別。因此，可以透過計算勝算比(odds ratio)來知道相對於影音平台，<code>The White House</code>更傾向具備那些文字特色，反之亦然。</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Use odds ratio for measuring word weighing of each source.</span>
-
-WhiteHouse_periscope_ratios &lt;-<span class="st"> </span>tweet_words <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">count</span>(word, source) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">filter</span>(<span class="kw">sum</span>(n) <span class="op">&gt;=</span><span class="st"> </span><span class="dv">5</span>) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">spread</span>(source, n, <span class="dt">fill =</span> <span class="dv">0</span>) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">ungroup</span>() <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">mutate_each</span>(<span class="kw">funs</span>((. <span class="op">+</span><span class="st"> </span><span class="dv">1</span>) <span class="op">/</span><span class="st"> </span><span class="kw">sum</span>(. <span class="op">+</span><span class="st"> </span><span class="dv">1</span>)), <span class="op">-</span>word) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">logratio =</span> <span class="kw">log2</span>(The_White_House <span class="op">/</span><span class="st"> </span>Periscope)) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">arrange</span>(<span class="kw">desc</span>(logratio))
-
-<span class="co"># Present words with top 8 high log odds ratio from Periscope and The White House</span>
-WhiteHouse_periscope_ratios <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">group_by</span>(logratio <span class="op">&gt;</span><span class="st"> </span><span class="dv">0</span>) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">top_n</span>(<span class="dv">8</span>, <span class="kw">abs</span>(logratio)) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">ungroup</span>() <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">word =</span> <span class="kw">reorder</span>(word, logratio)) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(word, logratio, <span class="dt">fill =</span> logratio <span class="op">&lt;</span><span class="st"> </span><span class="dv">0</span>)) <span class="op">+</span>
-<span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="dt">width =</span> <span class="fl">0.5</span>) <span class="op">+</span>
-<span class="st">  </span><span class="kw">coord_fixed</span>(<span class="dt">ratio =</span> <span class="dv">1000000</span>) <span class="op">+</span>
-<span class="st">  </span><span class="kw">coord_flip</span>() <span class="op">+</span>
-<span class="st">  </span><span class="kw">ylab</span>(<span class="st">&quot;The White House / Periscope log ratio&quot;</span>) <span class="op">+</span>
-<span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">name =</span> <span class="st">&quot;&quot;</span>, <span class="dt">labels =</span> <span class="kw">c</span>(<span class="st">&quot;The White House&quot;</span>, <span class="st">&quot;Periscope&quot;</span>),
-                    <span class="dt">values =</span> <span class="kw">c</span>(<span class="st">&quot;red&quot;</span>, <span class="st">&quot;lightblue&quot;</span>))</code></pre></div>
-<p><img src="Biden-POTUS-Final-Project_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use odds ratio for measuring word weighing of each source.</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>WhiteHouse_periscope_ratios <span class="ot">&lt;-</span> tweet_words <span class="sc">%&gt;%</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(word, source) <span class="sc">%&gt;%</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">sum</span>(n) <span class="sc">&gt;=</span> <span class="dv">5</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">spread</span>(source, n, <span class="at">fill =</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate_each</span>(<span class="fu">funs</span>((. <span class="sc">+</span> <span class="dv">1</span>) <span class="sc">/</span> <span class="fu">sum</span>(. <span class="sc">+</span> <span class="dv">1</span>)), <span class="sc">-</span>word) <span class="sc">%&gt;%</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">logratio =</span> <span class="fu">log2</span>(The_White_House <span class="sc">/</span> Periscope)) <span class="sc">%&gt;%</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(logratio))</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Present words with top 8 high log odds ratio from Periscope and The White House</span></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>WhiteHouse_periscope_ratios <span class="sc">%&gt;%</span></span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(logratio <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">top_n</span>(<span class="dv">8</span>, <span class="fu">abs</span>(logratio)) <span class="sc">%&gt;%</span></span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">word =</span> <span class="fu">reorder</span>(word, logratio)) <span class="sc">%&gt;%</span></span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(word, logratio, <span class="at">fill =</span> logratio <span class="sc">&lt;</span> <span class="dv">0</span>)) <span class="sc">+</span></span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="at">width =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_fixed</span>(<span class="at">ratio =</span> <span class="dv">1000000</span>) <span class="sc">+</span></span>
+<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">&quot;The White House / Periscope log ratio&quot;</span>) <span class="sc">+</span></span>
+<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">name =</span> <span class="st">&quot;&quot;</span>, <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">&quot;The White House&quot;</span>, <span class="st">&quot;Periscope&quot;</span>),</span>
+<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a>                    <span class="at">values =</span> <span class="fu">c</span>(<span class="st">&quot;red&quot;</span>, <span class="st">&quot;lightblue&quot;</span>))</span></code></pre></div>
+<p><img src="index_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
 <p>可以發現<code>@POTUS</code>對於推文內容具有系統性的管理:</p>
 <ul>
 <li>從影音平台發布的推文多與舉辦會議或是記者會有關，包含<code>tune/remarks/holding/visiting</code>；而且較<code>The White House</code>更傾向標註其他政府的 twitter 帳號，包含副總統(<code>@vp</code>)、國防部(<code>@deptofdefense</code>)、白宮國內政策委員會總監(<code>@ambrice46</code>)。</li>
@@ -630,18 +658,18 @@ WhiteHouse_periscope_ratios <span class="op">%&gt;%</span>
 </ul>
 </div>
 </div>
-<div id="sentiment-analysis" class="section level1">
-<h1><span class="header-section-number">5</span> Sentiment Analysis</h1>
+<div id="sentiment-analysis" class="section level1" number="5">
+<h1 number="5"><span class="header-section-number">5</span> Sentiment Analysis</h1>
 <p>最後情緒分析的環節，我們想要知道<code>@POTUS</code>的文字使用在情緒上表現，包含較常傳達哪些情緒、以及不同類別的情緒傳達分別由哪字詞組成。對此，我們採用<code>library(textdata)</code>中的<code>get_sentiments()</code>獲取<code>NRC Word-Emotion Association lexicon</code>，將<code>POTUS</code>使用的英文單詞分成十種情緒類別，比較<code>@POTUS</code>跟<code>@JoeBiden</code>的差異。</p>
-<div id="tweets-sentiment-overview" class="section level2">
-<h2><span class="header-section-number">5.1</span> Tweets Sentiment Overview</h2>
+<div id="tweets-sentiment-overview" class="section level2" number="5.1">
+<h2 number="5.1"><span class="header-section-number">5.1</span> Tweets Sentiment Overview</h2>
 <p><code>@POTUS</code>整體較常使用正面的情緒字眼，包含<code>positive/trust</code>，以及中性的<code>anticipation</code>。</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">sentiment_overview &lt;-<span class="st"> </span>tweet_words <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">inner_join</span>(<span class="kw">get_sentiments</span>(<span class="st">&quot;nrc&quot;</span>)) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">filter</span>(<span class="op">!</span><span class="kw">is.na</span>(sentiment)) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">count</span>(sentiment, <span class="dt">sort =</span> <span class="ot">TRUE</span>)
-
-sentiment_overview</code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>sentiment_overview <span class="ot">&lt;-</span> tweet_words <span class="sc">%&gt;%</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">inner_join</span>(<span class="fu">get_sentiments</span>(<span class="st">&quot;nrc&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(sentiment)) <span class="sc">%&gt;%</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">count</span>(sentiment, <span class="at">sort =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>sentiment_overview</span></code></pre></div>
 <pre><code>## # A tibble: 10 x 2
 ##    sentiment        n
 ##    &lt;chr&gt;        &lt;int&gt;
@@ -656,27 +684,27 @@ sentiment_overview</code></pre></div>
 ##  9 surprise       149
 ## 10 disgust         74</code></pre>
 </div>
-<div id="tweets-sentiment-by-source" class="section level2">
-<h2><span class="header-section-number">5.2</span> Tweets Sentiment by Source</h2>
+<div id="tweets-sentiment-by-source" class="section level2" number="5.2">
+<h2 number="5.2"><span class="header-section-number">5.2</span> Tweets Sentiment by Source</h2>
 <p><code>@POTUS</code>每種發文來源的情緒傾向都類似。</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">sources &lt;-<span class="st"> </span>tweet_words <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">group_by</span>(source) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">mutate</span>(<span class="dt">total_words =</span> <span class="kw">n</span>()) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">ungroup</span>() <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">distinct</span>(id, source, total_words)
-
-by_source_sentiment &lt;-<span class="st"> </span>tweet_words <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">inner_join</span>(<span class="kw">get_sentiments</span>(<span class="st">&quot;nrc&quot;</span>), <span class="dt">by =</span> <span class="st">&quot;word&quot;</span>) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">count</span>(sentiment, id) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">ungroup</span>() <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">complete</span>(sentiment, id, <span class="dt">fill =</span> <span class="kw">list</span>(<span class="dt">n =</span> <span class="dv">0</span>)) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">inner_join</span>(sources) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">group_by</span>(source, sentiment, total_words) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">summarize</span>(<span class="dt">words =</span> <span class="kw">sum</span>(n)) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">arrange</span>(<span class="kw">desc</span>(total_words)) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">ungroup</span>()
-
-by_source_sentiment</code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>sources <span class="ot">&lt;-</span> tweet_words <span class="sc">%&gt;%</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(source) <span class="sc">%&gt;%</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">total_words =</span> <span class="fu">n</span>()) <span class="sc">%&gt;%</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ungroup</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">distinct</span>(id, source, total_words)</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>by_source_sentiment <span class="ot">&lt;-</span> tweet_words <span class="sc">%&gt;%</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">inner_join</span>(<span class="fu">get_sentiments</span>(<span class="st">&quot;nrc&quot;</span>), <span class="at">by =</span> <span class="st">&quot;word&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">count</span>(sentiment, id) <span class="sc">%&gt;%</span></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ungroup</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">complete</span>(sentiment, id, <span class="at">fill =</span> <span class="fu">list</span>(<span class="at">n =</span> <span class="dv">0</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">inner_join</span>(sources) <span class="sc">%&gt;%</span></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(source, sentiment, total_words) <span class="sc">%&gt;%</span></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarize</span>(<span class="at">words =</span> <span class="fu">sum</span>(n)) <span class="sc">%&gt;%</span></span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">arrange</span>(<span class="fu">desc</span>(total_words)) <span class="sc">%&gt;%</span></span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ungroup</span>()</span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>by_source_sentiment</span></code></pre></div>
 <pre><code>## # A tibble: 50 x 4
 ##    source          sentiment    total_words words
 ##    &lt;chr&gt;           &lt;chr&gt;              &lt;int&gt; &lt;dbl&gt;
@@ -692,8 +720,8 @@ by_source_sentiment</code></pre></div>
 ## 10 The_White_House trust               5210   544
 ## # ... with 40 more rows</code></pre>
 </div>
-<div id="usage-of-common-sentimental-words" class="section level2">
-<h2><span class="header-section-number">5.3</span> Usage of Common Sentimental Words</h2>
+<div id="usage-of-common-sentimental-words" class="section level2" number="5.3">
+<h2 number="5.3"><span class="header-section-number">5.3</span> Usage of Common Sentimental Words</h2>
 <p>看完情緒使用次數與發文來源的情緒傾向之後，我們想要知道到底是哪些字組組成這些情緒的表達。綜合各情緒類別的字詞組成，可以發現出現頻率較高且具備政策意涵的詞彙有:</p>
 <ul>
 <li><code>positive/trust</code>: <code>rescue/vaccine/economy</code></li>
@@ -701,52 +729,52 @@ by_source_sentiment</code></pre></div>
 <li><code>negative/fear/sadness/anger</code>: <code>pandemic/tax</code></li>
 </ul>
 <p>其他大部分的詞彙則無法分辨是否具備特別意義。</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">nrc_word_counts &lt;-<span class="st"> </span>tweet_words <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">inner_join</span>(<span class="kw">get_sentiments</span>(<span class="st">&quot;nrc&quot;</span>)) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">count</span>(word, sentiment, <span class="dt">sort =</span> <span class="ot">TRUE</span>) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">ungroup</span>()
-  
-nrc_word_counts<span class="op">$</span>sentiment =<span class="st"> </span>
-<span class="st">  </span><span class="kw">factor</span>(nrc_word_counts<span class="op">$</span>sentiment, <span class="dt">levels =</span> sentiment_overview<span class="op">$</span>sentiment)
-
-nrc_word_counts <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">  </span><span class="kw">group_by</span>(sentiment) <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">  </span><span class="kw">top_n</span>(<span class="dv">8</span>, n) <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">  </span><span class="kw">arrange</span>(<span class="kw">desc</span>(n)) <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">  </span><span class="kw">ungroup</span>() <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">ggplot</span>() <span class="op">+</span>
-<span class="st">  </span><span class="kw">geom_histogram</span>(<span class="kw">aes</span>(<span class="dt">x =</span> <span class="kw">reorder</span>(word, n), <span class="dt">y =</span> n), <span class="dt">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="dt">width =</span> <span class="fl">0.75</span>) <span class="op">+</span>
-<span class="st">  </span><span class="kw">coord_flip</span>() <span class="op">+</span>
-<span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span>sentiment, <span class="dt">scales =</span> <span class="st">&quot;free&quot;</span>) <span class="op">+</span><span class="st"> </span>
-<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.text.y =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="kw">rel</span>(<span class="fl">0.75</span>))) <span class="op">+</span><span class="st"> </span>
-<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Word&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;&quot;</span>, <span class="dt">title =</span> <span class="st">&quot;Frequency of Occurrence by Sentiment&quot;</span>)</code></pre></div>
-<p><img src="Biden-POTUS-Final-Project_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>nrc_word_counts <span class="ot">&lt;-</span> tweet_words <span class="sc">%&gt;%</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">inner_join</span>(<span class="fu">get_sentiments</span>(<span class="st">&quot;nrc&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(word, sentiment, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>nrc_word_counts<span class="sc">$</span>sentiment <span class="ot">=</span> </span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">factor</span>(nrc_word_counts<span class="sc">$</span>sentiment, <span class="at">levels =</span> sentiment_overview<span class="sc">$</span>sentiment)</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>nrc_word_counts <span class="sc">%&gt;%</span> </span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(sentiment) <span class="sc">%&gt;%</span> </span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">top_n</span>(<span class="dv">8</span>, n) <span class="sc">%&gt;%</span> </span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n)) <span class="sc">%&gt;%</span> </span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">reorder</span>(word, n), <span class="at">y =</span> n), <span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="at">width =</span> <span class="fl">0.75</span>) <span class="sc">+</span></span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>sentiment, <span class="at">scales =</span> <span class="st">&quot;free&quot;</span>) <span class="sc">+</span> </span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="fu">rel</span>(<span class="fl">0.75</span>))) <span class="sc">+</span> </span>
+<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;Word&quot;</span>, <span class="at">y =</span> <span class="st">&quot;&quot;</span>, <span class="at">title =</span> <span class="st">&quot;Frequency of Occurrence by Sentiment&quot;</span>)</span></code></pre></div>
+<p><img src="index_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 </div>
-<div id="compared-with-joebiden" class="section level2">
-<h2><span class="header-section-number">5.4</span> Compared with <span class="citation">@JoeBiden</span></h2>
+<div id="compared-with-joebiden" class="section level2" number="5.4">
+<h2 number="5.4"><span class="header-section-number">5.4</span> Compared with <span class="citation">@JoeBiden</span></h2>
 <p><code>@JoeBiden</code>截至2020年11月使用<code>positive</code>與<code>negative</code>類別詞彙的傾向不相上下，而且兩者的使用量皆遠多過其他情緒類別。<code>trust/fear/anger/sadness</code>等情緒類別則差距不大。 這代表<code>@JoeBiden</code>在情緒傳達上的複雜程度遠大於<code>@POTUS</code>。<code>@POTUS</code>只傾向傳達正面情緒，但<code>@JoeBiden</code>都會使用。</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">reg &lt;-<span class="st"> &quot;([^A-Za-z</span><span class="ch">\\</span><span class="st">d#@&#39;]|&#39;(?![A-Za-z</span><span class="ch">\\</span><span class="st">d#@]))&quot;</span>
-
-tweet_words2 &lt;-<span class="st"> </span>AllJoeBidenTweets <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">filter</span>(<span class="op">!</span><span class="kw">str_detect</span>(tweet, <span class="st">&#39;^&quot;&#39;</span>)) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">mutate</span>(<span class="dt">text =</span> <span class="kw">str_replace_all</span>(tweet, <span class="st">&quot;https://t.co/[A-Za-z</span><span class="ch">\\</span><span class="st">d]+|&amp;amp;&quot;</span>, <span class="st">&quot;&quot;</span>)) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">unnest_tokens</span>(word, text, <span class="dt">token =</span> <span class="st">&quot;regex&quot;</span>, <span class="dt">pattern =</span> reg) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">filter</span>(<span class="op">!</span>word <span class="op">%in%</span><span class="st"> </span>stop_words<span class="op">$</span>word,
-           <span class="kw">str_detect</span>(word, <span class="st">&quot;[a-z]&quot;</span>)) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">arrange</span>(<span class="kw">desc</span>(likes))
-    
-sentiment_counts &lt;-<span class="st"> </span>tweet_words2 <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">left_join</span>(<span class="kw">get_sentiments</span>(<span class="st">&quot;nrc&quot;</span>)) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">count</span>(word, sentiment, <span class="dt">sort =</span> <span class="ot">TRUE</span>) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">ungroup</span>()
-
-sentiment_df &lt;-<span class="st">  </span>sentiment_counts <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">  </span><span class="kw">group_by</span>(sentiment) <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">n =</span> <span class="kw">n</span>()) <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">  </span><span class="kw">arrange</span>(<span class="kw">desc</span>(n)) <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">  </span><span class="kw">ungroup</span>()
-
-sentiment_df</code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>reg <span class="ot">&lt;-</span> <span class="st">&quot;([^A-Za-z</span><span class="sc">\\</span><span class="st">d#@&#39;]|&#39;(?![A-Za-z</span><span class="sc">\\</span><span class="st">d#@]))&quot;</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>tweet_words2 <span class="ot">&lt;-</span> AllJoeBidenTweets <span class="sc">%&gt;%</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">str_detect</span>(tweet, <span class="st">&#39;^&quot;&#39;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">text =</span> <span class="fu">str_replace_all</span>(tweet, <span class="st">&quot;https://t.co/[A-Za-z</span><span class="sc">\\</span><span class="st">d]+|&amp;amp;&quot;</span>, <span class="st">&quot;&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">unnest_tokens</span>(word, text, <span class="at">token =</span> <span class="st">&quot;regex&quot;</span>, <span class="at">pattern =</span> reg) <span class="sc">%&gt;%</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(<span class="sc">!</span>word <span class="sc">%in%</span> stop_words<span class="sc">$</span>word,</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>           <span class="fu">str_detect</span>(word, <span class="st">&quot;[a-z]&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">arrange</span>(<span class="fu">desc</span>(likes))</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>sentiment_counts <span class="ot">&lt;-</span> tweet_words2 <span class="sc">%&gt;%</span></span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(<span class="fu">get_sentiments</span>(<span class="st">&quot;nrc&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(word, sentiment, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>sentiment_df <span class="ot">&lt;-</span>  sentiment_counts <span class="sc">%&gt;%</span> </span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(sentiment) <span class="sc">%&gt;%</span> </span>
+<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">n =</span> <span class="fu">n</span>()) <span class="sc">%&gt;%</span> </span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n)) <span class="sc">%&gt;%</span> </span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
+<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a>sentiment_df</span></code></pre></div>
 <pre><code>## # A tibble: 11 x 2
 ##    sentiment        n
 ##    &lt;chr&gt;        &lt;int&gt;
@@ -769,50 +797,50 @@ sentiment_df</code></pre></div>
 <li><code>other/NA</code>: <code>vote/donald</code></li>
 </ul>
 <p>即使資料擷取時間有涵蓋總統選舉期間，<code>@JoeBiden</code>除了選舉詞彙與人物詞彙之外(例如<code>president/vote/trump</code>)還是多使用模糊字眼。即使我們加入不會被情緒詞表算進去的NA值去看，還是觀察不到政策辨識度比較高的單詞。<strong>可以推論相較<code>@POTUS</code>，<code>@JoeBiden</code>更加的情緒化，而不傾向呈現具體政策意涵或社會事件，而<code>@POTUS</code>單純就是一個政策導向的帳號。</strong></p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">sentiment_counts<span class="op">$</span>sentiment =<span class="st"> </span>
-<span class="st">  </span><span class="kw">factor</span>(sentiment_counts<span class="op">$</span>sentiment, <span class="dt">levels =</span> sentiment_df<span class="op">$</span>sentiment)
-
-sentiment_counts <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">  </span><span class="kw">group_by</span>(sentiment) <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">  </span><span class="kw">top_n</span>(<span class="dv">8</span>, n) <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">  </span><span class="kw">arrange</span>(<span class="kw">desc</span>(n)) <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">  </span><span class="kw">ungroup</span>() <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">ggplot</span>() <span class="op">+</span>
-<span class="st">  </span><span class="kw">geom_histogram</span>(<span class="kw">aes</span>(<span class="dt">x =</span> <span class="kw">reorder</span>(word, n), <span class="dt">y =</span> n), <span class="dt">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="dt">width =</span> <span class="fl">0.75</span>) <span class="op">+</span>
-<span class="st">  </span><span class="kw">coord_flip</span>() <span class="op">+</span>
-<span class="st">  </span><span class="kw">facet_wrap</span>(<span class="kw">vars</span>(sentiment), <span class="dt">scales =</span> <span class="st">&quot;free&quot;</span>) <span class="op">+</span><span class="st"> </span>
-<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.text.y =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="kw">rel</span>(<span class="fl">0.75</span>))) <span class="op">+</span><span class="st"> </span>
-<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Word&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;&quot;</span>, <span class="dt">title =</span> <span class="st">&quot;Frequency of Occurrence by Sentiment&quot;</span>)</code></pre></div>
-<p><img src="Biden-POTUS-Final-Project_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>sentiment_counts<span class="sc">$</span>sentiment <span class="ot">=</span> </span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">factor</span>(sentiment_counts<span class="sc">$</span>sentiment, <span class="at">levels =</span> sentiment_df<span class="sc">$</span>sentiment)</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>sentiment_counts <span class="sc">%&gt;%</span> </span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(sentiment) <span class="sc">%&gt;%</span> </span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">top_n</span>(<span class="dv">8</span>, n) <span class="sc">%&gt;%</span> </span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n)) <span class="sc">%&gt;%</span> </span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">reorder</span>(word, n), <span class="at">y =</span> n), <span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="at">width =</span> <span class="fl">0.75</span>) <span class="sc">+</span></span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="fu">vars</span>(sentiment), <span class="at">scales =</span> <span class="st">&quot;free&quot;</span>) <span class="sc">+</span> </span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="fu">rel</span>(<span class="fl">0.75</span>))) <span class="sc">+</span> </span>
+<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;Word&quot;</span>, <span class="at">y =</span> <span class="st">&quot;&quot;</span>, <span class="at">title =</span> <span class="st">&quot;Frequency of Occurrence by Sentiment&quot;</span>)</span></code></pre></div>
+<p><img src="index_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
 </div>
 </div>
-<div id="appendix" class="section level1">
-<h1><span class="header-section-number">6</span> Appendix</h1>
-<div id="addiotional-trial-usage-of-common-sentimental-words-with-top-fifty-favoritecount" class="section level2">
-<h2><span class="header-section-number">6.1</span> 《Addiotional Trial》: Usage of Common Sentimental Words with Top Fifty FavoriteCount</h2>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Preprocessing</span>
-favorite &lt;-<span class="st"> </span>df <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">arrange</span>(<span class="kw">desc</span>(favoriteCount)) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">top_n</span>(<span class="dv">50</span>)
-
-<span class="co"># Collecting Tweets Words</span>
-reg &lt;-<span class="st"> &quot;([^A-Za-z</span><span class="ch">\\</span><span class="st">d#@&#39;]|&#39;(?![A-Za-z</span><span class="ch">\\</span><span class="st">d#@]))&quot;</span>
-
-favorite_words &lt;-<span class="st"> </span>favorite <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">filter</span>(<span class="op">!</span><span class="kw">str_detect</span>(text, <span class="st">&#39;^&quot;&#39;</span>)) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">mutate</span>(<span class="dt">text =</span> <span class="kw">str_replace_all</span>(text, <span class="st">&quot;https://t.co/[A-Za-z</span><span class="ch">\\</span><span class="st">d]+|&amp;amp;&quot;</span>, <span class="st">&quot;&quot;</span>)) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">unnest_tokens</span>(word, text, <span class="dt">token =</span> <span class="st">&quot;regex&quot;</span>, <span class="dt">pattern =</span> reg) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">filter</span>(<span class="op">!</span>word <span class="op">%in%</span><span class="st"> </span>stop_words<span class="op">$</span>word,
-           <span class="kw">str_detect</span>(word, <span class="st">&quot;[a-z]&quot;</span>)) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">arrange</span>(<span class="kw">desc</span>(favoriteCount))
-
-<span class="co"># View the difference between whole @POTUS tweets and its top 50 favorite tweets </span>
-sentiment_overview_<span class="dv">50</span> &lt;-<span class="st"> </span>favorite_words <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">inner_join</span>(<span class="kw">get_sentiments</span>(<span class="st">&quot;nrc&quot;</span>)) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">filter</span>(<span class="op">!</span><span class="kw">is.na</span>(sentiment)) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">count</span>(sentiment, <span class="dt">sort =</span> <span class="ot">TRUE</span>)
-
-sentiment_overview_<span class="dv">50</span></code></pre></div>
+<div id="appendix" class="section level1" number="6">
+<h1 number="6"><span class="header-section-number">6</span> Appendix</h1>
+<div id="addiotional-trial-usage-of-common-sentimental-words-with-top-fifty-favoritecount" class="section level2" number="6.1">
+<h2 number="6.1"><span class="header-section-number">6.1</span> 《Addiotional Trial》: Usage of Common Sentimental Words with Top Fifty FavoriteCount</h2>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Preprocessing</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>favorite <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(favoriteCount)) <span class="sc">%&gt;%</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">top_n</span>(<span class="dv">50</span>)</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Collecting Tweets Words</span></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>reg <span class="ot">&lt;-</span> <span class="st">&quot;([^A-Za-z</span><span class="sc">\\</span><span class="st">d#@&#39;]|&#39;(?![A-Za-z</span><span class="sc">\\</span><span class="st">d#@]))&quot;</span></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>favorite_words <span class="ot">&lt;-</span> favorite <span class="sc">%&gt;%</span></span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">str_detect</span>(text, <span class="st">&#39;^&quot;&#39;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">text =</span> <span class="fu">str_replace_all</span>(text, <span class="st">&quot;https://t.co/[A-Za-z</span><span class="sc">\\</span><span class="st">d]+|&amp;amp;&quot;</span>, <span class="st">&quot;&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">unnest_tokens</span>(word, text, <span class="at">token =</span> <span class="st">&quot;regex&quot;</span>, <span class="at">pattern =</span> reg) <span class="sc">%&gt;%</span></span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(<span class="sc">!</span>word <span class="sc">%in%</span> stop_words<span class="sc">$</span>word,</span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a>           <span class="fu">str_detect</span>(word, <span class="st">&quot;[a-z]&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">arrange</span>(<span class="fu">desc</span>(favoriteCount))</span>
+<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a><span class="co"># View the difference between whole @POTUS tweets and its top 50 favorite tweets </span></span>
+<span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a>sentiment_overview_50 <span class="ot">&lt;-</span> favorite_words <span class="sc">%&gt;%</span></span>
+<span id="cb20-19"><a href="#cb20-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">inner_join</span>(<span class="fu">get_sentiments</span>(<span class="st">&quot;nrc&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb20-20"><a href="#cb20-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(sentiment)) <span class="sc">%&gt;%</span></span>
+<span id="cb20-21"><a href="#cb20-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">count</span>(sentiment, <span class="at">sort =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb20-22"><a href="#cb20-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-23"><a href="#cb20-23" aria-hidden="true" tabindex="-1"></a>sentiment_overview_50</span></code></pre></div>
 <pre><code>## # A tibble: 10 x 2
 ##    sentiment        n
 ##    &lt;chr&gt;        &lt;int&gt;
@@ -826,38 +854,28 @@ sentiment_overview_<span class="dv">50</span></code></pre></div>
 ##  8 anger           23
 ##  9 sadness         22
 ## 10 disgust          6</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">favorite_word_counts &lt;-<span class="st"> </span>favorite_words <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">inner_join</span>(<span class="kw">get_sentiments</span>(<span class="st">&quot;nrc&quot;</span>)) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">count</span>(word, sentiment, <span class="dt">sort =</span> <span class="ot">TRUE</span>) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">ungroup</span>()
-
-favorite_word_counts<span class="op">$</span>sentiment =<span class="st"> </span>
-<span class="st">  </span><span class="kw">factor</span>(favorite_word_counts<span class="op">$</span>sentiment, <span class="dt">levels =</span> sentiment_overview_<span class="dv">50</span><span class="op">$</span>sentiment)
-
-favorite_word_counts<span class="op">$</span>sentiment =<span class="st"> </span>
-<span class="st">  </span><span class="kw">factor</span>(favorite_word_counts<span class="op">$</span>sentiment, <span class="dt">levels =</span> sentiment_overview_<span class="dv">50</span><span class="op">$</span>sentiment)
-
-favorite_word_counts <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">  </span><span class="kw">filter</span>(n <span class="op">&gt;</span><span class="st"> </span><span class="dv">1</span>) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">group_by</span>(sentiment) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">top_n</span>(<span class="dv">8</span>, n) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">ggplot</span>() <span class="op">+</span>
-<span class="st">  </span><span class="kw">geom_histogram</span>(<span class="kw">aes</span>(<span class="dt">x =</span> <span class="kw">reorder</span>(word, n), <span class="dt">y =</span> n), <span class="dt">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="dt">width =</span> <span class="fl">0.75</span>) <span class="op">+</span>
-<span class="st">  </span><span class="kw">coord_flip</span>() <span class="op">+</span>
-<span class="st">  </span><span class="kw">facet_wrap</span>(<span class="kw">vars</span>(sentiment), <span class="dt">scales =</span> <span class="st">&quot;free&quot;</span>) <span class="op">+</span><span class="st"> </span>
-<span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.text.y =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="kw">rel</span>(<span class="fl">0.75</span>))) <span class="op">+</span><span class="st"> </span>
-<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Word&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;&quot;</span>, <span class="dt">title =</span> <span class="st">&quot;Words with Top Fifty FavoriteCount by Sentiment&quot;</span>)</code></pre></div>
-<p><img src="Biden-POTUS-Final-Project_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
-</div>
-<div id="組員分工" class="section level2">
-<h2><span class="header-section-number">6.2</span> 組員分工</h2>
-<ul>
-<li>簡郁展(投入程度6): 題目發想、資料蒐集、<span class="citation">@POTUS帳號觀察</span>、文字分析、<span class="citation">@JoeBiden情緒分析</span>、統整製作Rmarkdown、製作PPT、口頭報告</li>
-<li>邱繼賢(投入程度4): Timeline分析及繪圖、每日發文比例分析繪圖、發文照片/連結分析繪圖、各情緒用字繪圖、文獻閱讀</li>
-<li>潘立恆(投入程度4): 喜歡數與轉推數貼文分析、Twitter 資料搜集、貼文情緒分析、文獻閱讀、Github site建置</li>
-<li>陳暘(投入程度3): 關鍵字搜尋、Tweet資料閱讀、協助Github site建置</li>
-<li>劉慧新(投入程度2): <span class="citation">@JoeBiden帳號觀察</span>、轉推數跟喜歡數整理觀察</li>
-</ul>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>favorite_word_counts <span class="ot">&lt;-</span> favorite_words <span class="sc">%&gt;%</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">inner_join</span>(<span class="fu">get_sentiments</span>(<span class="st">&quot;nrc&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(word, sentiment, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>favorite_word_counts<span class="sc">$</span>sentiment <span class="ot">=</span> </span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">factor</span>(favorite_word_counts<span class="sc">$</span>sentiment, <span class="at">levels =</span> sentiment_overview_50<span class="sc">$</span>sentiment)</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>favorite_word_counts<span class="sc">$</span>sentiment <span class="ot">=</span> </span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">factor</span>(favorite_word_counts<span class="sc">$</span>sentiment, <span class="at">levels =</span> sentiment_overview_50<span class="sc">$</span>sentiment)</span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>favorite_word_counts <span class="sc">%&gt;%</span> </span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(n <span class="sc">&gt;</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(sentiment) <span class="sc">%&gt;%</span></span>
+<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">top_n</span>(<span class="dv">8</span>, n) <span class="sc">%&gt;%</span></span>
+<span id="cb22-16"><a href="#cb22-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb22-17"><a href="#cb22-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">reorder</span>(word, n), <span class="at">y =</span> n), <span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="at">width =</span> <span class="fl">0.75</span>) <span class="sc">+</span></span>
+<span id="cb22-18"><a href="#cb22-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb22-19"><a href="#cb22-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="fu">vars</span>(sentiment), <span class="at">scales =</span> <span class="st">&quot;free&quot;</span>) <span class="sc">+</span> </span>
+<span id="cb22-20"><a href="#cb22-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="fu">rel</span>(<span class="fl">0.75</span>))) <span class="sc">+</span> </span>
+<span id="cb22-21"><a href="#cb22-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;Word&quot;</span>, <span class="at">y =</span> <span class="st">&quot;&quot;</span>, <span class="at">title =</span> <span class="st">&quot;Words with Top Fifty FavoriteCount by Sentiment&quot;</span>)</span></code></pre></div>
+<p><img src="index_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
 </div>
 </div>
 
@@ -899,6 +917,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')

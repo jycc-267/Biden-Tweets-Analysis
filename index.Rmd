@@ -1,6 +1,6 @@
 ---
 title: "From @JoeBiden to @POTUS"
-author: "組員：簡郁展, 潘立恆, 邱繼賢, 劉慧新, 陳暘"
+author: "Jimmy Yu-Chan Chien (簡郁展)"
 date: "2021/6/18"
 output:
   html_document:
@@ -443,11 +443,3 @@ favorite_word_counts %>%
   theme(axis.text.y = element_text(size = rel(0.75))) + 
   labs(x = "Word", y = "", title = "Words with Top Fifty FavoriteCount by Sentiment")
 ```
-
-## 組員分工
-
-- 簡郁展(投入程度6): 題目發想、資料蒐集、@POTUS帳號觀察、文字分析、@JoeBiden情緒分析、統整製作Rmarkdown、製作PPT、口頭報告
-- 邱繼賢(投入程度4): Timeline分析及繪圖、每日發文比例分析繪圖、發文照片/連結分析繪圖、各情緒用字繪圖、文獻閱讀
-- 潘立恆(投入程度4): 喜歡數與轉推數貼文分析、Twitter 資料搜集、貼文情緒分析、文獻閱讀、Github site建置
-- 陳暘(投入程度3): 關鍵字搜尋、Tweet資料閱讀、協助Github site建置
-- 劉慧新(投入程度2): @JoeBiden帳號觀察、轉推數跟喜歡數整理觀察
