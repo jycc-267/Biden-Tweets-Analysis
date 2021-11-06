@@ -1,0 +1,13 @@
+name: "2021R_biden_report"
+output_dir: "."
+navbar:
+  title: "Text Analysis of Biden’s @POTUS Tweets"
+      
+  right:
+    - icon: fab fa-github fa-lg
+      href: https://github.com/sevenpray/2021R_biden_report/
+
+output:
+  html_document:
+    theme: paper
+    css: 'style.css'
