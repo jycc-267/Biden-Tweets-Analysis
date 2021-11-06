@@ -1,11 +1,11 @@
-name: "2021R_biden_report"
+name: "Biden Tweets Analysis"
 output_dir: "."
 navbar:
   title: "Text Analysis of Biden’s @POTUS Tweets"
       
   right:
     - icon: fab fa-github fa-lg
-      href: https://github.com/sevenpray/2021R_biden_report/
+      href: https://github.com/jycc-267/Biden-Tweets-Analysis/
 
 output:
   html_document:
